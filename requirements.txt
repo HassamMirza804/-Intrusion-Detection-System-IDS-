@@ -1,0 +1,6 @@
+pyshark
+pandas
+scikit-learn
+joblib
+requests
+flask
