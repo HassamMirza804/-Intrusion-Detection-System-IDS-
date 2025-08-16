@@ -5,8 +5,9 @@ An Intrusion Detection System (IDS) is a security tool that monitors a computer 
 ---
 
 ### 🎥 Demo Video
-
 A video demonstration of this project is available below.
+
+https://github.com/user-attachments/assets/b87f4c7c-79f7-4944-b1fe-30ff400b5220
 
 ---
 
