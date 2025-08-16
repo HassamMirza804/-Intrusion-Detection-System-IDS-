@@ -39,8 +39,7 @@ To run this application locally, follow these steps:
     python ids_server.py
     ```
     
-4.  **Attack the server**:
-     ```sh
+4.  **Attack & Test**:
 
 
 
