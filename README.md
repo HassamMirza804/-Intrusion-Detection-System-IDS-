@@ -12,10 +12,9 @@ A video demonstration of this project is available below.
 
 ### ✨ Features
 
-* **URL Scanning**: Analyzes public and private URLs for suspicious keywords and structures.
-* **Text Analysis**: Scans text from emails or messages to identify embedded phishing links.
-* **File Scanning**: Processes `.txt` and `.pdf` files, using OCR to extract and analyze URLs, including those in images.
-* **Deployment**: Hosted on Render for continuous availability and easy access.
+* **Real-Time Threat Detection**: This model monitors network traffic as it occurs, providing instant alerts on the command line.
+* **Multi-Threat Classification**: It's capable of identifying and distinguishing between multiple types of attacks, including `port scans`, `brute-force attacks`, and `DDoS attacks`.
+* **Granular Feature Analysis:t**: The model makes accurate predictions by analyzing a comprehensive set of detailed network flow features, not just basic traffic metrics.
 
 ---
 
@@ -23,23 +22,23 @@ A video demonstration of this project is available below.
 
 To run this application locally, follow these steps:
 
-1.  **Clone the repository**:
+Step # 1.  **Clone the repository**:
     ```sh
     git clone https://github.com/HassamMirza804/-Intrusion-Detection-System-IDS-.git
     ```
 
-2.  **Navigate into the project directory and install dependencies**:
+Step # 2.  **Navigate into the project directory and install dependencies**:
     ```sh
     cd -Intrusion-Detection-System-IDS-
     pip install -r requirements.txt
     ```
 
-3.  **Run the server**:
+Step # 3.  **Run the server**:
     ```sh
     python ids_server.py
     ```
     
-4.  **Attack & Test**:
+Step # 4.  **Attack & Test**:
 
 
 
