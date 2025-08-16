@@ -22,23 +22,23 @@ A video demonstration of this project is available below.
 
 To run this application locally, follow these steps:
 
-Step # 1.  **Clone the repository**:
+1.  **Clone the repository**:
     ```sh
     git clone https://github.com/HassamMirza804/-Intrusion-Detection-System-IDS-.git
     ```
 
-Step # 2.  **Navigate into the project directory and install dependencies**:
+2.  **Navigate into the project directory and install dependencies**:
     ```sh
     cd -Intrusion-Detection-System-IDS-
     pip install -r requirements.txt
     ```
 
-Step # 3.  **Run the server**:
+3.  **Run the server**:
     ```sh
     python ids_server.py
     ```
     
-Step # 4.  **Attack & Test**:
+4.  **Attack & Test**:
 
 
 
