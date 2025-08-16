@@ -1,18 +1,17 @@
-🛡️ ML-Powered Intrusion Detection System
-This project is a real-time Intrusion Detection System (IDS) built to classify network traffic as either benign or malicious. The system is hosted on a local Flask server, which serves as both the IDS and the victim server for safe, controlled testing.
+This project is a sophisticated, real-time Intrusion Detection System (IDS) designed to classify network traffic as either benign or malicious. The system is built on Python and Flask, providing a local server that serves as both the IDS and a victim server for safe, controlled testing.
 
-Key Components & Techniques
-Random Forest Classifier: This is the core machine learning model (ids_model.pkl) used for classification. Random Forest is an ensemble learning method that combines multiple decision trees, making it robust and highly accurate for identifying complex attack patterns in network data.
+Methodology & Key Technologies
+Machine Learning Model: The core of this system is a Random Forest Classifier (ids_model.pkl). This ensemble learning model, composed of multiple decision trees, is highly effective at identifying complex patterns in network data. It has been trained to recognize and distinguish between normal traffic and various attack types.
 
-StandardScaler: This data preprocessing tool (scaler.pkl) is crucial for preparing the network traffic data before it is fed to the model. It standardizes features like Flow Duration, Flow Packets/s, and Destination Port to ensure the model can make accurate and consistent predictions.
+Data Preprocessing: A StandardScaler (scaler.pkl) is used to preprocess all incoming network data. This crucial step standardizes the features (e.g., Flow Duration, Flow Packets/s) to a common scale, which is essential for the model to make accurate and consistent predictions.
 
-Flask Server (ids_server.py): The Flask application acts as the a central hub. It loads the trained model and scaler, processes incoming network traffic in real time, and provides an API endpoint for predictions.
+Server Framework: The entire system is hosted on a Flask server (ids_server.py). The server loads the trained model and scaler, processes real-time traffic, and provides an API endpoint for making predictions.
 
-How the System Works & Testing
-To test the system, I use Kali Linux as the primary environment.
+Testing and Validation
+The system is tested in a controlled environment using Kali Linux as the operating system.
 
-Server Hosting: The Flask server is run on Kali Linux, establishing it as the victim server.
+Victim Server: The Flask application is run on the Kali Linux machine, establishing it as the target for the simulated attacks.
 
-Attack Simulation: Instead of performing actual attacks, I use scripts to safely simulate common network threats like port scans, brute-force attacks, and DDoS attacks.
+Attack Simulation: To comply with safety and privacy policies, actual attacks are not performed. Instead, three distinct scripts are used to simulate network threats: a port scan, a brute-force attack, and a DDoS attack.
 
-Real-Time Detection: As the simulated traffic hits the Flask server, the IDS model analyzes the data. If a malicious pattern is detected, an alert is printed directly to the command-line interface (CLI), confirming the model's ability to identify and respond to threats in real time.
+Real-Time Detection: As the simulated traffic hits the Flask server, the IDS model analyzes the data. Upon detecting a malicious pattern, an alert is immediately printed to the command-line interface, confirming the model's capability to identify and respond to threats in real-time.
